@@ -97,7 +97,7 @@ describe "Queue Priority pages" do
     it "should have form to edit queues" do
       get "/queuepriority"
 
-      last_response.body.should match /<form action=".*?\/queuepriority"/
+      last_response.body.should match /<form action="queuepriority"/
     end
 
     it "should update queues" do
